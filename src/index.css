@@ -1,0 +1,104 @@
+
+.app {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height:28rem;
+  width: 30rem;
+  text-align: center;
+  margin: 5rem 0 0 20rem ;
+  background-color: cadetblue;
+  border-radius: .5rem;
+box-shadow:0px 0px 4px rgba(0,0,0,0.9) ;
+}
+
+
+.inputField, .header {
+  margin-left: 15px 0;
+
+}
+input {
+  width: 20rem;
+  height: 2rem;
+  outline: none;
+  padding: 5px;
+  border-radius: .5rem;
+  background-color: rgb(202, 205, 209);
+}
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  height: 3rem;
+  font-size: .8rem;
+  border-radius: .5rem;
+  background-color: coral;
+  border: none;
+  
+
+}
+
+.todoList{
+text-align: right;
+padding: 1rem;
+}
+
+ul{
+  list-style-type: disc;
+  margin-left: 1px;
+}
+
+
+.editIcons {
+  display: flex;
+  justify-content: column space-between;
+  align-items: start;
+  text-align: left;
+  margin: 5px 0;
+  margin-left: auto;
+  cursor: pointer;
+  input {
+    padding: 15px;
+  }
+}
+.editIcons span{
+  margin-left:1rem;
+
+}
+  
+.editIcons  button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      margin-left: 5px;
+      font-size: 16px;
+    }
+
+    
+    @media (max-width: 768px) {
+
+      .app{
+        margin-left: 5rem;
+      }
+      .todoList {
+        width: 100%;
+        padding: 10px;
+      }
+    
+      h1 {
+        font-size: 20px;
+      }
+    
+      .inputField {
+        flex-direction: column-reverse;
+        margin-right: 5rem;
+        width: 100%;
+      }
+      button{
+        width: 5rem;
+      }
+
+    }
+  
+
+
